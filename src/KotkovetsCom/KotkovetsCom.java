@@ -16,8 +16,8 @@ public class KotkovetsCom {
     public static void main(String[] args) {
         SimpleRemoteControl remote = new SimpleRemoteControl();
         Light light = new Light();
-        LightOnCommand lightOn = new LightOnCommand(light); 
-        remote.setCommand(lightOn);
+        LightOffCommand lightOff = new LightOffCommand(light); 
+        remote.setCommand(lightOff);
         remote.buttonWasPressed();
     }
 }
